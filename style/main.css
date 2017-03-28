@@ -1,0 +1,49 @@
+*{
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.divider{
+    width: 200px;
+    height: 3px;
+    background-color: #FC593A;
+}
+.why_ask, .price_block, .contact_area, .calc_block{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/**/
+.navbar{
+    background-color: #0A407E;
+}
+.navbar li a{
+    color: white;
+}
+.navbar li:hover{
+    color: #FC593A;
+    border-bottom: 2px solid #FC593A;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+
+
+/**/
+.price-cost{
+    border: 2px solid #FC593A;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/**/
+.contact_area{
+    background-color: #1E88E5;
+}
