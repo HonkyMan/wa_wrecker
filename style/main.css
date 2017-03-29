@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
 *{
     transition: 1s;
     -webkit-transition: 1s;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration: none;
@@ -12,11 +14,16 @@ a:hover{
     width: 200px;
     height: 3px;
     background-color: #FC593A;
+    margin-bottom: 50px;
 }
-.why_ask, .price_block, .contact_area, .calc_block{
+.why_ask, .price_block, .contact_area, .calc_block, .gallery_block, .about_work, .review_block, .type_of_services, .contact_block{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.intro_block, .gallery_block, .review_block{
+    background-color: #F1F1F1; 
+}
+
 /**/
 .navbar{
     background-color: #0A407E;
@@ -46,4 +53,67 @@ a:hover{
 /**/
 .contact_area{
     background-color: #1E88E5;
+}
+
+/**/
+.gallery_block img{
+    margin-top: 10px;
+}
+.gallery_block-all_img{
+    margin-bottom: -20px;
+}
+
+/**/
+.review_block .container row{
+    margin-top: 10px;
+}
+.review_block-desc{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    min-height: 200px;
+}
+.portfolio{
+    float: left;
+    margin-right: 15px;
+}
+.review_block-date{
+    font-size: 12px;
+    color: #FC593A;
+}
+
+/**/
+.contact_block{
+    background-image: url('../images/map.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #F1F1F1;   
+    
+}
+.contact_block input{
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact_block-h{
+    color: white;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .review_block-p{
+        max-width: 70%;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .review_block-p{
+        max-width: 70%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .review_block-p{
+        max-width: 70%;
+    }
 }
