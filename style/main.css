@@ -16,7 +16,7 @@ a:hover{
     background-color: #FC593A;
     margin-bottom: 50px;
 }
-.why_ask, .price_block, .contact_area, .calc_block, .gallery_block, .about_work, .review_block, .type_of_services, .contact_block{
+.why_ask, .price_block, .contact_area, .calc_block, .gallery_block, .about_work, .review_block, .type_of_services, .contact_block, .footer_1, .footer_2{
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -52,7 +52,7 @@ a:hover{
 
 /**/
 .contact_area{
-    background-color: #1E88E5;
+    background-color: #0A407E;
 }
 
 /**/
@@ -91,15 +91,47 @@ a:hover{
 	background-color: #F1F1F1;   
     
 }
-.contact_block input{
-    height: 40px;
+.contact_block input, textarea{
     width: 100%;
     margin-top: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact_block input{
+    height: 40px;
+}
+.contact_block textarea{
+    resize: none;
+    padding-top: 10px;
+}
+.contact_block input::-webkit-input-placeholder{
+    left: 15px;
 }
 
 .contact_block-h{
     color: white;
 }
+.message{
+    height: 150px;
+}
+.submit{
+    background: #FC593A;
+    color: white;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+/**/
+.footer_1{
+    background-color: #0A407E;
+}
+.footer_2{
+    background-color: #0A3567;
+}
+
+
 
 
 @media screen and (min-width: 768px) and (max-width: 991px){
