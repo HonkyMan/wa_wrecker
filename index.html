@@ -63,6 +63,7 @@
             </div>
         </div>
     </header>
+
     <div class="container-fluid intro_block">
         <div class="container why_ask">
             <div class="divider"></div>
@@ -128,15 +129,11 @@
             <div class="col-md-6">
                 <form action="">
                     <div class="row">
-                        <div class="container">
                             <input type="text">
                             <input type="tel">
-                        </div>
                     </div>
                     <div class="row">
-                        <div class="container">
                             <input type="submit">
-                        </div>
                     </div>
                 </form>
             </div>
@@ -145,81 +142,83 @@
 
     <div class="container-fluid calc_block">
         <div class="container">
-            <div class="container">
-                <h1 class = "calc_block-h"></h1>
+            <center>
+                <h1 class = "calc_block-h">КАЛЬКУЛЯТОР РАССЧЕТА ЭВАКУАЦИИ ВАШЕГО АВТО</h1>
                 <div class="divider"></div>
-                <div class="calculator">
+            </center>
+            <div class="col-md-2"></div>
+            <div class="col-md-8 calculator">
+                <div class="calc_block-header container-fluid row">
+                    <center><h3 class="calculator-h">ТИП АВТОМОБИЛЯ</h3></center>
+                </div>
+                <form action="" method = "GET">
                     <div class="container-fluid">
-                        <h1 class="calculator-h"></h1>
+                        <ul>
+                            <div class="col-md-6">
+                                <li>
+                                    <input type="radio" name = "moto" id = "moto" checked/>
+                                    <img src="http://placehold.it/150x150" alt="">
+                                    <p>Мотоциклы</p>
+                                </li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>
+                                    <input type="radio" name = "car" id = "car"/>
+                                    <img src="http://placehold.it/150x150" alt="">
+                                    <p>Легковые машины</p>
+                                </li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>
+                                    <input type="radio" name = "bus" id = "bus"/>
+                                    <img src="http://placehold.it/150x150" alt="">
+                                    <p>Микроавтобус</p>
+                                </li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>
+                                    <input type="radio" name = "suv" id = "suv"/>
+                                    <img src="http://placehold.it/150x150" alt="">
+                                    <p>Джипы, внедорожники</p>
+                                </li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>
+                                    <input type="radio" name = "truck" id = "truck"/>
+                                    <img src="http://placehold.it/150x150" alt="">
+                                    <p>Спецтехника</p>
+                                </li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>
+                                    <input type="radio" name = "ship" id = "ship"/>
+                                    <img src="http://placehold.it/150x150" alt="">
+                                    <p>Катеры и яхты</p>
+                                </li>
+                            </div>
+                        </ul>
                     </div>
-                    <form action="">
-                        <div class="container-fluid">
-                            <ul>
-                                <div class="col-md-6">
-                                    <li>
-                                        <input type="radio">
-                                        <img src="http://placehold.it/150x150" alt="">
-                                        <p></p>
-                                    </li>
-                                </div>
-                                <div class="col-md-6">
-                                    <li>
-                                        <input type="radio">
-                                        <img src="http://placehold.it/150x150" alt="">
-                                        <p></p>
-                                    </li>
-                                </div>
-                                <div class="col-md-6">
-                                    <li>
-                                        <input type="radio">
-                                        <img src="http://placehold.it/150x150" alt="">
-                                        <p></p>
-                                    </li>
-                                </div>
-                                <div class="col-md-6">
-                                    <li>
-                                        <input type="radio">
-                                        <img src="http://placehold.it/150x150" alt="">
-                                        <p></p>
-                                    </li>
-                                </div>
-                                <div class="col-md-6">
-                                    <li>
-                                        <input type="radio">
-                                        <img src="http://placehold.it/150x150" alt="">
-                                        <p></p>
-                                    </li>
-                                </div>
-                                <div class="col-md-6">
-                                    <li>
-                                        <input type="radio">
-                                        <img src="http://placehold.it/150x150" alt="">
-                                        <p></p>
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="container-fluid">
+                    <div class="container-fluid">
 
-                        </div>
-                    </form>
-                    <div class="container-fluid">
-                        <p class="calculator-cost_p"></p>
-                        <div class="calculator-cost"></div>
-                        <p></p>
-                        <p></p>
                     </div>
-                    <div class="container-fluid">
-                        <div class="container">
-                            <div class="col-md-6"><input type="text"></div>
-                            <div class="col-md-6"><input type="text"></div>
-                        </div>
-                        <div class="container">
-                            <div class="col-md-12"><input type="submit"></div>
-                        </div>
+                </form>
+                <div class="container-fluid calc_block-features row">
+                    <p class="calculator-cost_p"></p>
+                    <div class="calculator-cost"></div>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="container-fluid calc_block-price row">
+                    <div class="container">
+                        <div class="col-md-6"><input type="text"></div>
+                        <div class="col-md-6"><input type="text"></div>
+                    </div>
+                    <div class="container-fluid row calc_block-call_back">
+                        <div class="col-md-12"><input type="submit"></div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
 
@@ -229,18 +228,18 @@
                 <h1 class="gallery_block-h">ПРИМЕРЫ НАШИХ РАБОТ</h1>
                 <div class="divider"></div>
             </center>
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
+            <div class="gallery_block-gallery">
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
 
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/250x250" alt="" class="img-responsice"></a></div>
             </div>
-            <div class="row">
+            <div class="container">
                 <center><a href="#" class="gallery_block-all_img">Смотреть все фото</a></center>
             </div>
         </div>
@@ -248,7 +247,7 @@
 
     <div class="container about_work">
         <center>
-            <h1 class="about_work-h"></h1>
+            <h1 class="about_work-h">КАК МЫ РАБОТАЕМ</h1>
             <div class="divider"></div>
         </center>
         <div class="col-md-6 col-sm-12">
@@ -268,16 +267,14 @@
             <div class="row">
                 <div class="container">
                     <div class="col-sm-3"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></div>
-                    <div class="col-sm-9 review_block-desc">
-                        <div class="container ">
-                            <img src="http://placehold.it/50x50" alt="" class="portfolio">
-                            <div>
-                                <h2 class="review_block-name">Билецкий Антон <br><span class="review_block-date">05.02.2017</span></h2>
-                            </div>
-                            <p class = "review_block-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime totam nulla odio architecto voluptas 
-                                deserunt fugit, aperiam esse at repellendus quisquam eius consequuntur blanditiis eaque dolorem nostrum doloremque ab ad?
-                            </p>
-                        </div>
+                    <div class="col-sm-9 review_block-desc">                                                     
+                        <img src="http://placehold.it/50x50" alt="" class="portfolio">
+                        <h2 class="review_block-name">Билецкий Антон <br><span class="review_block-date">05.02.2017</span></h2>
+                        <p class = "review_block-p">
+                            Случалось со мной неприятность - старушка боевая сломалась. Ну никак не хочет ехать. В машине валялся
+                            телефон фирмы, типа только позвони - и мы у ваших ног, спасаем-доставим. Радостно соединилась милая
+                            девушка, выслушала мое жалобное нытье и заверила в оказании немедленной помощи. И скидка была обещена...
+                        </p>
                     </div>
                 </div>
             </div>
@@ -286,15 +283,15 @@
                 <div class="container">
                     <div class="col-sm-3"><img src="http://placehold.it/200x200" alt="" class="img-responsice"></div>
                     <div class="col-sm-9 review_block-desc">
-                        <div class="container ">
-                            <img src="http://placehold.it/50x50" alt="" class="portfolio">
-                            <div>
-                                <h2 class="review_block-name">Билецкий Антон <br><span class="review_block-date">05.02.2017</span></h2>
-                            </div>
-                            <p class = "review_block-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime totam nulla odio architecto voluptas 
-                                deserunt fugit, aperiam esse at repellendus quisquam eius consequuntur blanditiis eaque dolorem nostrum doloremque ab ad?
-                            </p>
+                        <img src="http://placehold.it/50x50" alt="" class="portfolio">
+                        <div>
+                            <h2 class="review_block-name">Билецкий Антон <br><span class="review_block-date">05.02.2017</span></h2>
                         </div>
+                        <p class = "review_block-p">
+                            Случалось со мной неприятность - старушка боевая сломалась. Ну никак не хочет ехать. В машине валялся
+                            телефон фирмы, типа только позвони - и мы у ваших ног, спасаем-доставим. Радостно соединилась милая
+                            девушка, выслушала мое жалобное нытье и заверила в оказании немедленной помощи. И скидка была обещена...
+                        </p>
                     </div>
                 </div>
             </div>
@@ -303,9 +300,21 @@
 
     <div class="container type_of_services">
         <h1>ВЫЗВАТЬ ЭВАКУАТОР В КАЗАНИ</h1>
-        <h2>Виды услуг эвакуатора</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque at tempore quidem, temporibus repellendus dolor soluta rerum ipsum esse quo provident, quod possimus vitae harum eos. Quod non quaerat commodi assumenda quidem quas, voluptate, veniam nesciunt nostrum. Aperiam nulla natus, amet esse perferendis animi dolorum quos cum dolorem incidunt explicabo soluta eius, delectus cupiditate voluptatum quibusdam totam dolore odio veritatis iste nam magnam saepe aut architecto eveniet. Ratione quo veniam sapiente, tenetur quasi quod est, esse, totam ducimus quaerat quia nam blanditiis aperiam provident corporis? Quidem tempore quaerat error. Cum nam odio unde culpa molestiae, odit dolore. Beatae facere voluptas dolor nesciunt praesentium odio enim voluptatibus, sunt nemo voluptate, aliquid aliquam fugiat officiis similique soluta incidunt sapiente nihil. Pariatur, ratione.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores laudantium officiis natus, perspiciatis sequi officia consequuntur quod ex non expedita cum, esse a excepturi eum et ullam. Ipsa, veniam. Consequatur, neque, ducimus. Veritatis ipsum illo amet deserunt blanditiis possimus fugit quisquam molestias id molestiae minima esse sint placeat excepturi nisi corporis, quo nostrum? Dicta expedita tenetur illo ex unde rerum quasi. Repellat, enim, dolores. Ut, omnis eos qui fugit. Odit doloremque porro sequi explicabo neque nostrum nihil hic vero voluptatem ut. Consequatur, sed vero maiores ullam! Officiis, voluptatem, repellendus.</p>
+        <h2 class = "type_of_services-h2">Виды услуг эвакуатора</h2>
+        <p class = "type_of_services-p">
+            Основные принципы нашей работы - это оперативность выполнения заказа и максимальный комфорт клиента. Мы гарантируем доступные цены
+            на все виды работ и сохранность вашего транспортного средства во время его транспортировки нашими сотрудниками.
+            Вы можете вызвать эвакуатор любого класса в нужное Вам время дешево, так как наш сервис принимает заявки от клиентов в 
+            круглосуточном режиме. Грузовой эвакуатор оснащен дополнительным техническим оборудованием, позволяющим разместить на его площадке 
+            любое средство передвижение с общей массой не более 4 т.
+        </p>
+        <p class = "type_of_services-p">
+            Вызвать эвакуатор круглосуточно вы можжете, узнав телефонны нашей службы и позвонив по ним. В течении небольшого промежутка
+            времени наша бригада прибудет на место стоянки вашей машины. Мы оперативно решаем задачи по перевозке различной специальзированной
+            техники (погрузчик, минитрактор и тому подобное) по нужному вам адресу по выгодной цене. Стоимость эвакуатора вы можете уточнить
+            у менеджера компании, номинальная цена составляет 1000 рублей. <br>
+            Постоянным клиентам скидка.
+        </p>
     </div>
 
     <div class="container-fluid contact_block">
@@ -322,50 +331,61 @@
                     <input type="submit" class = "submit" value = "ЗАДАТЬ ВОПРОС">
                 </form>
             </div>
-            <div class="col-md-8"></div>
+            <div class="col-md-8"><div class="full_map"></div></div>
         </div>
     </div>
 
     <footer>
         <div class="container-fluid footer_1">
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="container"><img src="" alt="" class="img-responsive"></div>
+            <div class="container">
+                <div class="col-md-4">
+                    <div class="col-md-12">
+                        <img src="images/bottom_logo.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-12">
+                        <h3 class = "footer_1-social_h">МЫ В СОЦСЕТЯХ <br></h3>
+                        <img src="http://placehold.it/40x40" alt="">
+                        <img src="http://placehold.it/40x40" alt="">
+                        <img src="http://placehold.it/40x40" alt="">
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="container"></div>
+                <div class="col-md-4">
+                    <div class="col-md-12"><h2>Информация</h2></div>
+                    <div class="col-md-6" style = "float: left;">
+                        <ul>
+                            <li>О компании</li>
+                            <li>Услуги</li>
+                            <li>Сотрудничество</li>
+                            <li>Цены</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Как мы работаем</li>
+                            <li>Статьи</li>
+                            <li>Контакты</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <h2></h2>
-                <div class="col-md-6">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div class="col-md-4">
+                    <h2>Контакты</h2>
+                    <p class="adress"><i class="fa fa-2x fa-map-marker" aria-hidden="true"></i>  г. Казань, С.Батыева, 21</p>
+                    <p class="phone">
+                        <i class="fa fa-2x fa-phone" aria-hidden="true"></i>  <span>+7(843)</span> 2-603-403 <br>
+                        <span>+7(906)</span> 2-603-403
+                    </p>
+                    <input type="submit" class = "submit" value = "ЗАКАЗАТЬ ЗВОНОК">
                 </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h1></h1>
-                <p class="adress"></p>
-                <p class="phone"></p>
-                <button class="submit" value = "ЗАКАЗАТЬ ЗВОНОК"></button>
             </div>
         </div>
         <div class="container-fluid footer_2">
-            <div class="col-mdd-6">
-                <span>Все права защищены. "Авто-Помощь"</span>
-            </div>
-            <div class="col-mdd-6">
-                <img src="" alt="">
+            <div class="container">
+                <div class="col-mdd-6">
+                    <span>© 2013-2015 "Авто-Помощь". Все права защищены</span>
+                </div>
+                <div class="col-mdd-6">
+                    <img src="" alt="">
+                </div>
             </div>
         </div>
     </footer>
@@ -373,6 +393,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script/jquery.fancybox.min.js"></script>
+    <script src="https://use.fontawesome.com/5c50798a96.js"></script>
     <script src = "script/script.js"></script>
 </body>
 </html>

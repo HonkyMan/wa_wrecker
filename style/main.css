@@ -4,6 +4,9 @@
     -webkit-transition: 1s;
     font-family: 'Roboto', sans-serif;
 }
+li{
+    list-style: none;
+}
 a{
     text-decoration: none;
 }
@@ -56,11 +59,38 @@ a:hover{
 }
 
 /**/
+
+.calculator{
+    border: 2px solid #F1F1F1;
+}
+.calc_block-header{
+    background-color: #0A407E;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'Roboto';
+}
+.calc_block-features{
+    background-color: #F1F1F1;
+}
+.calc_block-price{
+    background-color: #FC593A;
+}
+.calc_block-call_back{
+    background-color: #0A407E;
+}
+/**/
+.gallery_block-gallery{
+    margin-bottom: 100px;
+}
 .gallery_block img{
     margin-top: 10px;
 }
 .gallery_block-all_img{
-    margin-bottom: -20px;
+    margin-top: 50px;
+    top: 50px;
+    border-bottom: 1px dashed #0A407E;
+}
+.gallery_block-all_img:hover{
 }
 
 /**/
@@ -83,13 +113,22 @@ a:hover{
 }
 
 /**/
+.type_of_services-h2{
+    color: #054283;
+}
+.type_of_services-p{
+    color: #555;
+}
+
+/**/
 .contact_block{
     background-image: url('../images/map.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	background-color: #F1F1F1;   
-    
+    padding-left: auto;
+    padding-right: auto;
 }
 .contact_block input, textarea{
     width: 100%;
@@ -122,11 +161,25 @@ a:hover{
     font-family: 'Roboto';
     font-size: 20px;
 }
+.full_map{
+    float: right;
+    height: 200px;
+    width: 90%;
+    cursor: pointer;
+}
 
 /**/
+footer{
+    color: white;
+}
 .footer_1{
+    padding-left: 15px;
     background-color: #0A407E;
 }
+.fa{
+    color: #FC593A;
+}
+
 .footer_2{
     background-color: #0A3567;
 }
@@ -134,7 +187,7 @@ a:hover{
 
 
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+/*@media screen and (min-width: 768px) and (max-width: 991px){
     .review_block-p{
         max-width: 70%;
     }
