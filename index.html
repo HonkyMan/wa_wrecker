@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid head_row">
             <div class="row">
                 <div class="container">
                     <img src="images/logo.jpg" alt="Авто-помощь" style = "float: left;">
@@ -32,29 +32,48 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class = "navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-                            <span class="sr-only">Открыть навигацию</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>    
-                        </button>               
-                    </div>
-                    <div class="collapse navbar-collapse" id="responsive-menu">
-                        <ul class="nav navbar-nav">
-                            <li id="about"><a href="#">О КОМПАНИИ</a></li>
-                            <li id="service"><a href="#" class = "nav-active">УСЛУГИ</a></li>
-                            <li id="cooperation"><a href="#">СОТРУДНИЧЕСТВО</a></li>
-                            <li id="price"><a href="#">ЦЕНЫ</a></li>
-                            <li id="workspace"><a href="#">КАК МЫ РАБОТАЕМ</a></li>
-                            <li id="blog"><a href="#">СТАТЬИ</a></li>
-                            <li id="contact"><a href="#">КОНТАКТЫ</a></li>
-                        </ul>
-                    </div>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class = "navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                        <span class="sr-only">Открыть навигацию</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>    
+                    </button>               
                 </div>
+                <div class="collapse navbar-collapse" id="responsive-menu">
+                    <ul class="nav navbar-nav">
+                        <li id="about"><a href="#">О КОМПАНИИ</a></li>
+                        <li id="service"><a href="#" class = "nav-active">УСЛУГИ</a></li>
+                        <li id="cooperation"><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                        <li id="price"><a href="#">ЦЕНЫ</a></li>
+                        <li id="workspace"><a href="#">КАК МЫ РАБОТАЕМ</a></li>
+                        <li id="blog"><a href="#">СТАТЬИ</a></li>
+                        <li id="contact"><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid slider">
+            <div class="container">
+                <div class="col-md-7"></div>
+                <div class="col-md-4 wrecker_call">
+                    <form action="" method = "GET">
+                        <h2 class="wrecker_call-h">ВЫЗВАТЬ ЭВАКУАТОР</h2>
+                        <input type="text" class = "wrecker_call-input" placeholder = "Введите имя">
+                        <input type="tel" class = "wrecker_call-input" placeholder = "Введите номер телефона">
+                        <ul>
+                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "helm"><label for="helm"> Блокировка руля</label></li>
+                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "wheel"><label for="wheel"> Блокировка колес</label></li>
+
+                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "switch"><label for="switch"> Быстрый запуск</label></li>
+                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "akp"><label for="akp"> Разблокировка АКП</label></li>
+
+                        </ul>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
     </header>

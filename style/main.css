@@ -19,7 +19,7 @@ a:hover{
     background-color: #FC593A;
     margin-bottom: 50px;
 }
-.why_ask, .price_block, .contact_area, .calc_block, .gallery_block, .about_work, .review_block, .type_of_services, .contact_block, .footer_1, .footer_2{
+.slider, .why_ask, .price_block, .contact_area, .calc_block, .gallery_block, .about_work, .review_block, .type_of_services, .contact_block, .footer_1, .footer_2{
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -31,8 +31,19 @@ h1, h2, h3, h4, p{
 }
 
 /**/
+header{
+    background-image: url('../images/slide.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    background-color: #fff;
+}
+.head_row{
+    background-color: rgba(255, 255, 255, 0.9);
+}
 .navbar{
     background-color: #0A407E;
+    border: none;
 }
 .navbar li a{
     color: white;
@@ -42,6 +53,29 @@ h1, h2, h3, h4, p{
     border-bottom: 2px solid #FC593A;
     transition: 1s;
     -webkit-transition: 1s;
+}
+.wrecker_call{
+    color: white;
+}
+.wrecker_call-input{
+    color: black;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.wrecker_call-checkbox{
+    background: none;
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 20px;
+    height: 20px;
+}
+.wrecker_call-checkbox + label{
+    cursor: pointer;
+    vertical-align: middle;
 }
 /**/
 .intro_block .divider{
