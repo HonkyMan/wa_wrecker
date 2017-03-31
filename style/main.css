@@ -43,7 +43,26 @@ h1, h2, h3, h4, p{
     transition: 1s;
     -webkit-transition: 1s;
 }
-
+/**/
+.intro_block .divider{
+    margin-top: 30px;
+}
+.intro_block{
+    line-height: 1;
+}
+.small_ask{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.big_ask{
+    font-size: 70px;
+    font-weight: bold;
+}
+.intro_block_ask{
+    font-size: 100px;
+}
 
 /**/
 .price-cost{
@@ -56,17 +75,63 @@ h1, h2, h3, h4, p{
     padding-top: 5px;
     margin-top: 10px;
     text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.price-cost:hover{
+    background: #FC593A;
+    color: white;
+    transition: 1s;
 }
 .price-type_name{
     color: #0A407E;
 }
 .price-cost p{
     font-size: 20px;
+    cursor: pointer;
 }
 
 /**/
 .contact_area{
-    background-color: #0A407E;
+    background-image: url('../images/contact_area.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    background-color: #054283;
+    line-height: 1;
+}
+.contact_area-p{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.contact_area-h{
+    color: #FC593A;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.contact_area-name, .contact_area-phone{
+    width: 49%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.contact_area-submit{
+    width: 99%;
+    height: 40px;
+    border:none;
+    border-radius: 3px;
+    background-color: #FC593A;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact_area input::-webkit-input-placeholder{
+    font-size: 18px;
 }
 
 /**/
@@ -101,7 +166,14 @@ h1, h2, h3, h4, p{
     top: 50px;
     border-bottom: 1px dashed #0A407E;
 }
-.gallery_block-all_img:hover{
+/**/
+
+.about_work{
+    background-image: url('../images/about_work.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #F1F1F1;   
 }
 
 /**/
