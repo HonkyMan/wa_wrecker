@@ -26,6 +26,9 @@ a:hover{
 .intro_block, .gallery_block, .review_block{
     background-color: #F1F1F1; 
 }
+h1, h2, h3, h4, p{
+    cursor: default;
+}
 
 /**/
 .navbar{
@@ -44,13 +47,21 @@ a:hover{
 
 /**/
 .price-cost{
-    border: 2px solid #FC593A;
-    width: 250px;
+    border: 3px solid #FC593A;
+    display: inline-block;
+    position: inherit;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
     margin-top: 10px;
     text-align: center;
+}
+.price-type_name{
+    color: #0A407E;
+}
+.price-cost p{
+    font-size: 20px;
 }
 
 /**/
@@ -82,8 +93,8 @@ a:hover{
 .gallery_block-gallery{
     margin-bottom: 100px;
 }
-.gallery_block img{
-    margin-top: 10px;
+.gallery_block-gallery img{
+    margin-bottom: 20px;
 }
 .gallery_block-all_img{
     margin-top: 50px;
