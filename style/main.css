@@ -29,33 +29,118 @@ a:hover{
 h1, h2, h3, h4, p{
     cursor: default;
 }
+#vk, #fb, #tw{
+    cursor: pointer;
+}
+input{
+    border: none;
+}
+
+.submit{
+    background: #FC593A;
+    color: white;
+    border: none;
+    font-family: 'Roboto';
+    border-radius: 5px;
+    font-size: 15px;
+    height: 45px;
+    width: 200px;
+}
 
 /**/
 header{
+    background-color: #fff;
+}
+.slider{
     background-image: url('../images/slide.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-    background-color: #fff;
+}
+.header-logo_time, .header-tel_block, .header-time_desc, .share{
+    float: left;
+    margin-left: 20px;
+}
+.header-tel{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 3px;
 }
 .head_row{
-    background-color: rgba(255, 255, 255, 0.9);
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.head_row-submit{
+    background: #b53b23;
+    font-size: 15px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    float: right;
+    margin-right: 10px;
+    font-family: 'Roboto';
+}
+.header-time_desc{
+    margin-top: 5px;
+}
+.share_txt{
+    margin-bottom: -0px;
+}
+.share{
+    margin-right: 10px;
 }
 .navbar{
-    background-color: #0A407E;
-    border: none;
+    text-align: center;
 }
-.navbar li a{
-    color: white;
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
 }
-.navbar li:hover{
-    color: #FC593A;
-    border-bottom: 2px solid #FC593A;
-    transition: 1s;
-    -webkit-transition: 1s;
+#custom-bootstrap-menu.navbar-default {
+    font-size: 18px;
+    background-color: rgba(10, 64, 126, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(10, 64, 126, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(12, 40, 74, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(18, 60, 112, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #123c70;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #123c70;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #123c70;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #0a407e;
 }
 .wrecker_call{
     color: white;
+}
+.wrecker_call-ul_1{
+    margin-left: -35px;
+    float: left;
 }
 .wrecker_call-input{
     color: black;
@@ -67,15 +152,28 @@ header{
     padding-left: 15px;
 }
 .wrecker_call-checkbox{
-    background: none;
-    vertical-align: top;
-    margin: 0 3px 0 0;
-    width: 20px;
-    height: 20px;
+    display: none;
 }
 .wrecker_call-checkbox + label{
-    cursor: pointer;
-    vertical-align: middle;
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+}
+.wrecker_call-checkbox + label::before{
+    content: "";
+	display: inline-block;
+
+	width: 16px;
+	height: 16px;
+
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #aaa;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
 }
 /**/
 .intro_block .divider{
@@ -161,32 +259,92 @@ header{
     border-radius: 3px;
     background-color: #FC593A;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 .contact_area input::-webkit-input-placeholder{
     font-size: 18px;
 }
-
 /**/
 
+.calculator, .calc_desc, .calc_cost, .calc_connect{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 .calculator{
     border: 2px solid #F1F1F1;
 }
-.calc_block-header{
+.calculator-header{
     background-color: #0A407E;
     margin-bottom: 50px;
     color: white;
-    font-family: 'Roboto';
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
 }
-.calc_block-features{
-    background-color: #F1F1F1;
+.calculator-form{
+    margin-left: 30px;
+    margin-right: 30px;
 }
-.calc_block-price{
+.calculator-form ul{
+    float: left;
+}
+.calc_desc{
+    background-color:#F1F1F1;
+}
+.calc_desc ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.calc_desc-ul_desc li{
+    font-size: 15px;
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+.wreck_calc, .wreck_calc label, .wreck_calc label img{
+    float: left;
+}
+.shadowed{
+    box-shadow: 0 0 10px #FC593A;
+}
+.vehicle_choice:hover{
+    box-shadow: 0 0 10px #FC593A;
+}
+.calc_cost{
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #FC593A;
+    color: white;
 }
-.calc_block-call_back{
+#final_cost{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 15px;
+}
+.past-scriptum{
+    font-size: 10px;
+    line-height: 13px;
+}
+.calc_connect{
     background-color: #0A407E;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.calc_connect-form{
+    margin-left: auto;
+    margin-right: auto;
+}
+.calc_connect-submit{
+    width: 300px;
+}
+#calc-country_km{
+    box-shadow: 0 0 1px rgba(10, 64, 126, 0.9);
+}
+#calc-country_km{
+    width: 50px;
 }
 /**/
 .gallery_block-gallery{
@@ -203,11 +361,10 @@ header{
 /**/
 
 .about_work{
-    background-image: url('../images/about_work.png');
+    background-color: white;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	background-color: #F1F1F1;   
 }
 
 /**/
@@ -271,13 +428,6 @@ header{
 .message{
     height: 150px;
 }
-.submit{
-    background: #FC593A;
-    color: white;
-    border: none;
-    font-family: 'Roboto';
-    font-size: 20px;
-}
 .full_map{
     float: right;
     height: 200px;
@@ -304,18 +454,23 @@ footer{
 
 
 
-/*@media screen and (min-width: 768px) and (max-width: 991px){
-    .review_block-p{
-        max-width: 70%;
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .slider{
+        background-color: #F1F1F1;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
-    .review_block-p{
-        max-width: 70%;
+    #navbar_block{
+        margin-left: 5%;
     }
 }
-@media screen and (min-width: 1200px){
-    .review_block-p{
-        max-width: 70%;
+@media screen and (min-width: 1200px) and (max-width: 1499px){
+    #navbar_block{
+        margin-left: 15%;
+    }
+}
+@media screen and (min-width: 1501){
+    #navbar_block{
+        margin-left: 20%;
     }
 }

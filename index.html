@@ -12,61 +12,92 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid head_row">
+        <div class="container-fluid head_row hidden-sm hidden-xs">
             <div class="row">
                 <div class="container">
-                    <img src="images/logo.jpg" alt="Авто-помощь" style = "float: left;">
-                    <img src="" alt="Время работы" style = "float: left;">
-                    <div style = "float: left;">
-                    <a href="tel:+78432603403">+7 (843) 260 - 34 - 03</a><br>
-                    <a href="tel:+79662603403">+7 (966) 260 - 34 - 03</a>
+                    <img src="images/logo.jpg" alt="Авто-помощь" class = "hedaer-logo" style = "float: left;">
+                    <img src="images/time.png" alt="Время работы" class = "header-logo_time">
+                    <div class="header-tel_block">
+                        <a href="tel:+78432603403" class = "header-tel">+7 (843) 260 - 34 - 03</a><br>
+                        <a href="tel:+79662603403" class = "header-tel">+7 (966) 260 - 34 - 03</a>
                     </div>
-                    <p style = "float: left;">Круглосуточно<br> без выходныхы</p>
+                    <p class="header-time_desc">Круглосуточно<br> без выходныхы</p>
                     <div class="share">
-                        <p></p>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <p class = "share_txt">Поделиться</p>
+                        <img src="images/social/vk.png" id = "vk" width = "35" height = "35" alt="">
+                        <img src="images/social/fb.png" id = "fb" width = "35" height = "35"  alt="">
+                        <img src="images/social/tw.png" id = "tw" width = "35" height = "35"  alt="">
                     </div>
-                    <input type="button" class = "call_back">
+                    <input type="submit" value = "ЗАКАЗАТЬ ЗВОНОК" class = "head_row-submit hidden-xs hidden-sm">
                 </div>
             </div>
         </div>
-        <div class="navbar navbar-default">
-            <div class="container">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation" style= "margin-bottom: 0px;">
+            <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class = "navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-                        <span class="sr-only">Открыть навигацию</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>    
-                    </button>               
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="collapse navbar-collapse" id="responsive-menu">
+                <div class="collapse navbar-collapse navbar-menubuilder" id="navbar_block">
                     <ul class="nav navbar-nav">
-                        <li id="about"><a href="#">О КОМПАНИИ</a></li>
-                        <li id="service"><a href="#" class = "nav-active">УСЛУГИ</a></li>
-                        <li id="cooperation"><a href="#">СОТРУДНИЧЕСТВО</a></li>
-                        <li id="price"><a href="#">ЦЕНЫ</a></li>
-                        <li id="workspace"><a href="#">КАК МЫ РАБОТАЕМ</a></li>
-                        <li id="blog"><a href="#">СТАТЬИ</a></li>
-                        <li id="contact"><a href="#">КОНТАКТЫ</a></li>
+                        <li><a href="#">О компании</a>
+                        </li>
+                        <li><a href="#">Услуги</a>
+                        </li>
+                        <li><a href="#">Сотрудничество</a>
+                        </li>
+                        <li><a href="#">Цены</a>
+                        </li>
+                        <li><a href="#">Как мы работаем</a>
+                        </li>
+                        <li><a href="#">Статьи</a>
+                        </li>
+                        <li><a href="#">Контакты</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="container-fluid slider">
+        <!--<nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class = "navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                            <span class="sr-only">Открыть навигацию</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>    
+                        </button>               
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav">
+                            <li id="about"><a href="#">О КОМПАНИИ</a></li>
+                            <li id="service"><a href="#" class = "nav-active">УСЛУГИ</a></li>
+                            <li id="cooperation"><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                            <li id="price"><a href="#">ЦЕНЫ</a></li>
+                            <li id="workspace"><a href="#">КАК МЫ РАБОТАЕМ</a></li>
+                            <li id="blog"><a href="#">СТАТЬИ</a></li>
+                            <li id="contact"><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>-->
+        <div class="container-fluid slider" id="wreck_caller">
             <div class="container">
                 <div class="col-md-7"></div>
                 <div class="col-md-4 wrecker_call">
                     <form action="" method = "GET">
+                        <input type="hidden" id="type_of_car" name = "type_of_car" value = "2">   
+
                         <h2 class="wrecker_call-h">ВЫЗВАТЬ ЭВАКУАТОР</h2>
                         <input type="text" class = "wrecker_call-input" placeholder = "Введите имя">
                         <input type="tel" class = "wrecker_call-input" placeholder = "Введите номер телефона">
-                        <ul>
+                        <ul class = "wrecker_call-ul_1">
                             <li><input type="checkbox" class = "wrecker_call-checkbox" id = "helm"><label for="helm"> Блокировка руля</label></li>
                             <li><input type="checkbox" class = "wrecker_call-checkbox" id = "wheel"><label for="wheel"> Блокировка колес</label></li>
-
+                        </ul>
+                        <ul class = "wrecker_call-ul_2">
                             <li><input type="checkbox" class = "wrecker_call-checkbox" id = "switch"><label for="switch"> Быстрый запуск</label></li>
                             <li><input type="checkbox" class = "wrecker_call-checkbox" id = "akp"><label for="akp"> Разблокировка АКП</label></li>
 
@@ -102,28 +133,28 @@
             </div>
             <div class="row">
                 <div class="container">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "1">
                         <h4 class="price-type_name" align = "center">мотоциклы</h4>
                         <img src="http://placehold.it/250x250" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "moto_price">
                             <p>от 1 000 руб.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "2">
                         <h4 class="price-type_name" align = "center">легковые авто</h4>
                         <img src="http://placehold.it/250x250" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "car_price">
                             <p>от 1 200 руб.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "3">
                         <h4 class="price-type_name" align = "center">внедорожники до 4т.</h4>
                         <img src="http://placehold.it/250x250" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "_price">
                             <p>от 1 500 руб.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "4">
                         <h4 class="price-type_name" align = "center">спецтехника до 4т.</h4>
                         <img src="http://placehold.it/250x250" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "suv_price">
@@ -158,82 +189,85 @@
     <div class="container-fluid calc_block">
         <div class="container">
             <center>
-                <h1 class = "calc_block-h">КАЛЬКУЛЯТОР РАССЧЕТА ЭВАКУАЦИИ ВАШЕГО АВТО</h1>
+                <h1 class="calc_block-h">КАЛЬКУЛЯТОР РАСЧЕТА ЭВАКУАЦИИ ВАШЕГО АВТО</h1>
                 <div class="divider"></div>
-            </center>
-            <div class="col-md-2"></div>
-            <div class="col-md-8 calculator">
-                <div class="calc_block-header container-fluid row">
-                    <center><h3 class="calculator-h">ТИП АВТОМОБИЛЯ</h3></center>
-                </div>
-                <form action="" method = "GET">
-                    <div class="container-fluid">
-                        <ul>
-                            <div class="col-md-6">
-                                <li>
-                                    <input type="radio" name = "moto" id = "moto" checked/>
-                                    <img src="http://placehold.it/150x150" alt="">
-                                    <p>Мотоциклы</p>
-                                </li>
-                            </div>
-                            <div class="col-md-6">
-                                <li>
-                                    <input type="radio" name = "car" id = "car"/>
-                                    <img src="http://placehold.it/150x150" alt="">
-                                    <p>Легковые машины</p>
-                                </li>
-                            </div>
-                            <div class="col-md-6">
-                                <li>
-                                    <input type="radio" name = "bus" id = "bus"/>
-                                    <img src="http://placehold.it/150x150" alt="">
-                                    <p>Микроавтобус</p>
-                                </li>
-                            </div>
-                            <div class="col-md-6">
-                                <li>
-                                    <input type="radio" name = "suv" id = "suv"/>
-                                    <img src="http://placehold.it/150x150" alt="">
-                                    <p>Джипы, внедорожники</p>
-                                </li>
-                            </div>
-                            <div class="col-md-6">
-                                <li>
-                                    <input type="radio" name = "truck" id = "truck"/>
-                                    <img src="http://placehold.it/150x150" alt="">
-                                    <p>Спецтехника</p>
-                                </li>
-                            </div>
-                            <div class="col-md-6">
-                                <li>
-                                    <input type="radio" name = "ship" id = "ship"/>
-                                    <img src="http://placehold.it/150x150" alt="">
-                                    <p>Катеры и яхты</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="container-fluid">
-
-                    </div>
-                </form>
-                <div class="container-fluid calc_block-features row">
-                    <p class="calculator-cost_p"></p>
-                    <div class="calculator-cost"></div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="container-fluid calc_block-price row">
-                    <div class="container">
-                        <div class="col-md-6"><input type="text"></div>
-                        <div class="col-md-6"><input type="text"></div>
-                    </div>
-                    <div class="container-fluid row calc_block-call_back">
-                        <div class="col-md-12"><input type="submit"></div>
-                    </div>
+            </center><br>
+            <div class="container calculator">
+                <div class="calculator-header row"><center><h1>Тип автомобиля</h1></center></div>
+                <div class = "calculator-form">
+                    <input type="hidden" class = "car_type" name = "car_type" value = "1">
+                    <input type="hidden" id="h_blocked" name = "h_blocked" value="0">
+                    <input type="hidden" id="w_blocked" name="w_blocked" value = "0">
+                    <ul class = "col-md-6 col-sm-6 col-xs-12">
+                        <center>
+                            <li><label for="1_car" id="car_type" data-item = "0" class = "vehicle_choice shadowed"><img src="http://placehold.it/150x150" class = "img-responsive" alt="">Мотоциклы</label></li>
+                            <li><label for="2_car" id="car_type" data-item = "1" class = "vehicle_choice"><img src="http://placehold.it/150x150" class = "img-responsive" alt="">Легковые авто</label></li>
+                            <li><label for="3_car" id="car_type" data-item = "2" class = "vehicle_choice"><img src="http://placehold.it/150x150" class = "img-responsive" alt="">Джипы</label></li>
+                        </center>
+                    </ul>
+                    <ul class = "col-md-6 col-sm-6 col-xs-12">
+                        <center>
+                            <li><label for="4_car" id="car_type" data-item="3" class = "vehicle_choice"><img src="http://placehold.it/150x150" class = "img-responsive" alt="">Грузовые</label></li>
+                            <li><label for="5_car" id="car_type" data-item="4" class = "vehicle_choice"><img src="http://placehold.it/150x150" class = "img-responsive" alt="">Спецтехника</label></li>
+                            <li><label for="6_car" id="car_type" data-item="5" class = "vehicle_choice"><img src="http://placehold.it/150x150" class = "img-responsive" alt="">Яхты</label></li>
+                        </center>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-2"></div>
+
+            <div class="container calc_desc">
+                <div class="col-md-5">
+                    <ul class = "calc_desc-ul_desc">
+                        <li>Расстояние: </li>
+                        <li>Заблокированный руль: </li>
+                        <li>Заблокированные колеса: </li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <ul>
+                        <li>
+                            <input type="radio" name="calc_where_from" class="calc_where_from" id ="city" checked><label for="city">по городу</label>&emsp;
+                            <input type="radio" name="calc_where_from" class="calc_where_from" id ="country"><label for="country">за городом &emsp;
+                            <input type="number" id="calc-country_km" value = "0" oninput="count_km()"><label> km.</label></label>
+                            <p id="demo"></p>
+                        </li>
+                        <li><input type="checkbox" id="calc-helm_blocked"></li>
+                        <li>
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked_0" checked><label for="calc-wheel_blocked_0">Нет</label>&emsp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_1">1</label>&ensp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_2">2</label>&ensp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_3">3</label>&ensp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_4">4</label>&ensp;
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container calc_cost">
+                <div class="col-md-5">
+                    <h3>СТОИМОСТЬ СОСТАВИТ</h3>
+                </div>
+                <div class="col-md-3">
+                    <input disabled type="text" name="cost" value = "800" id="final_cost" size="10px"><label id="label" for="final_cost"> рублей</label>
+                </div>
+                <div class="col-md-4">
+                    <p class = "past-scriptum">* Данный расчет является предварительным. <br>
+                        Окончательная стоимость услуги зависит от<br> индивидуальных
+                        факторов.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container calc_connect">
+                <center>
+                <form class="calc_connect-form" action="">
+                    <input type="hidden" id="car_num" value = "1"><input type="hidden" id="from" value = "0">
+                    <input type="text" class = "contact_area-name" name="name" id="name" placeholder="Введите имя"/>
+                    <input type="tel" class = "contact_area-phone" name="phone"  id="phone" placeholder="Введите номер телефона"/><br>
+                    <input type="submit" class = "submit contact_area-submit" value = "ЗАКАЗАТЬ ЗВОНОК">
+                </form>
+                </center>
+            </div>
         </div>
     </div>
 
@@ -244,7 +278,7 @@
                 <div class="divider"></div>
             </center>
             <div class="gallery_block-gallery">
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/300x300" alt="" class="img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="http://placehold.it/150x150" class = "img-responsive" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/300x300" alt="" class="img-responsive"></a></div>
                 <div class="col-md-3 col-sm-3 col-xs-6"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/300x300" alt="" class="img-responsive"></a></div>
                 <div class="col-md-3 col-sm-3 col-xs-6"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/300x300" alt="" class="img-responsive"></a></div>
                 <div class="col-md-3 col-sm-3 col-xs-6"><a href="http://placehold.it/1500x700" class="fancyimage" data-fancybox-group="group"><img src="http://placehold.it/300x300" alt="" class="img-responsive"></a></div>
@@ -267,10 +301,14 @@
                 <div class="divider"></div>
             </center>
             <div class="col-md-6 col-sm-12">
-
+                <img src="images/about_work/bout_work_1.png" class = "img-responsive" alt="">
+                <img src="images/about_work/bout_work_2.png" class = "img-responsive" alt="">
+                <img src="images/about_work/bout_work_3.png" class = "img-responsive" alt="">
             </div>
             <div class="col-md-6 col-sm-12">
-
+                <img src="images/about_work/bout_work_4.png" class = "img-responsive" alt="">
+                <img src="images/about_work/bout_work_5.png" class = "img-responsive" alt="">
+                <img src="images/about_work/bout_work_6.png" class = "img-responsive" alt="">
             </div>
         </div>
     </div> 
@@ -361,15 +399,15 @@
                     </div>
                     <div class="col-md-12">
                         <h3 class = "footer_1-social_h">МЫ В СОЦСЕТЯХ <br></h3>
-                        <img src="http://placehold.it/40x40" alt="">
-                        <img src="http://placehold.it/40x40" alt="">
-                        <img src="http://placehold.it/40x40" alt="">
+                        <img src="images/social/vk.png" id="vk" width = "35" height = "35" alt="">
+                        <img src="images/social/fb.png" id="fb" width = "35" height = "35"  alt="">
+                        <img src="images/social/tw.png" id="tw" width = "35" height = "35"  alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="col-md-12"><h2>Информация</h2></div>
-                    <div class="col-md-6" style = "float: left;">
-                        <ul>
+                    <div class="col-md-6">
+                        <ul style = "margin-left: -40px;">
                             <li>О компании</li>
                             <li>Услуги</li>
                             <li>Сотрудничество</li>
@@ -377,7 +415,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <ul>
+                        <ul style = "margin-left: -40px;">
                             <li>Как мы работаем</li>
                             <li>Статьи</li>
                             <li>Контакты</li>
