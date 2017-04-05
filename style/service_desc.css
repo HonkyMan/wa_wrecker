@@ -1,0 +1,24 @@
+.service_desc{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.service_desc-cat{
+    font-family: 'Roboto';
+    text-align: justify;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    max-height: 60px;
+    cursor: pointer;
+}
+.service_desc-cat p{
+    cursor: pointer;
+}
+.service_desc-cat_active{
+    background-color: #FC593A;
+    color: white;
+}

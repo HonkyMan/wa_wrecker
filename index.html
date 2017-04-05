@@ -171,7 +171,7 @@
             <div class="container calculator">
                 <div class="calculator-header row"><center><h1>Тип автомобиля</h1></center></div>
                 <div class = "calculator-form">
-                    <input type="hidden" class = "car_type" name = "car_type" value = "1">
+                    <input type="hidden" class = "car_type" name = "car_type" value = "0">
                     <input type="hidden" id="h_blocked" name = "h_blocked" value="0">
                     <input type="hidden" id="w_blocked" name="w_blocked" value = "0">
                     <ul class = "col-md-6 col-sm-6 col-xs-6">
@@ -201,18 +201,18 @@
                 </div>
                 <div class="col-md-7">
                     <ul class = "col-md-6 col-sm-6 col-xs-6">
-                        <li style = "display: inline-block;">
+                        <li>
                             <input type="radio" name="calc_where_from" class="calc_where_from" id ="city" checked><label for="city">по городу</label>&emsp;          
-                            <input type="radio" name="calc_where_from" class="calc_where_from" id ="country"><label for="country">за городом &emsp;
-                            <input type="number" id="calc-country_km" value = "0" oninput="count_km()"><label> km.</label></label>
+                            <input type="radio" name="calc_where_from" class="calc_where_from" id ="country"><label for="country">за городом</label>&emsp;
+                            <input type="number" id="calc-country_km" value = "0" oninput="count_km()"><label> km.</label>
                         </li>
                         <li><input type="checkbox" id="calc-helm_blocked"></li>
                         <li>
-                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked_0" checked><label for="calc-wheel_blocked_0">Нет</label>&emsp;
-                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_1">1</label>&ensp;
-                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_2">2</label>&ensp;
-                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_3">3</label>&ensp;
-                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked"><label for="calc-wheel_blocked_4">4</label>&ensp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked" data-wheel="0" checked><label for="calc-wheel_blocked_0">Нет</label>&emsp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked" data-wheel="1"><label for="calc-wheel_blocked_1">1</label>&ensp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked" data-wheel="2"><label for="calc-wheel_blocked_2">2</label>&ensp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked" data-wheel="3"><label for="calc-wheel_blocked_3">3</label>&ensp;
+                            <input type="radio" name="calc-wheel_blocked" id="calc-wheel_blocked" data-wheel="4"><label for="calc-wheel_blocked_4">4</label>&ensp;
                         </li>
                     </ul>
                 </div>
@@ -374,9 +374,9 @@
                     </div>
                     <div class="col-md-12">
                         <h3 class = "footer_1-social_h">МЫ В СОЦСЕТЯХ <br></h3>
-                        <img src="images/social/vk.png" id="vk" width = "35" height = "35" alt="">
-                        <img src="images/social/fb.png" id="fb" width = "35" height = "35"  alt="">
-                        <img src="images/social/tw.png" id="tw" width = "35" height = "35"  alt="">
+                        <img src="images/social/vk.png" id = "vk" width = "35" height = "35" alt="">
+                        <img src="images/social/fb.png" id = "fb" width = "35" height = "35"  alt="">
+                        <img src="images/social/tw.png" id = "tw" width = "35" height = "35"  alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -424,6 +424,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script/jquery.fancybox.min.js"></script>
     <script src="https://use.fontawesome.com/5c50798a96.js"></script>
-    <script src = "script/script.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/calc.js"></script>
 </body>
 </html>
