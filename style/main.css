@@ -56,6 +56,7 @@ header{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+    background-color: white;
 }
 .header-logo_time, .header-tel_block, .header-time_desc, .share{
     float: left;
@@ -137,6 +138,9 @@ header{
 }
 .wrecker_call{
     color: white;
+}
+.wrecker_call, .contact_block{
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
 }
 .wrecker_call-ul_1{
     margin-left: -35px;
@@ -267,11 +271,6 @@ header{
 }
 /**/
 
-.calculator, .calc_desc, .calc_cost, .calc_connect{
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
 .calculator{
     border: 2px solid #F1F1F1;
 }
@@ -451,26 +450,56 @@ footer{
     background-color: #0A3567;
 }
 
-
-
-
+@media screen and (max-width: 767px){
+    .calculator, .calc_desc, .calc_cost, .calc_connect{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .calc_desc-ul_desc li{
+        margin-bottom: 30px;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 991px){
     .slider{
         background-color: #F1F1F1;
     }
+    .calculator, .calc_desc, .calc_cost, .calc_connect{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
-    #navbar_block{
-        margin-left: 5%;
+    .calculator, .calc_desc, .calc_cost, .calc_connect{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1499px){
-    #navbar_block{
-        margin-left: 15%;
+    .calculator, .calc_desc, .calc_cost, .calc_connect{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
     }
 }
-@media screen and (min-width: 1501){
-    #navbar_block{
-        margin-left: 20%;
+@media screen and (min-width: 1501px){
+    .calculator, .calc_desc, .calc_cost, .calc_connect{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
     }
+}
+
+@media (min-width: 768px) {
+  .nav.navbar-nav {
+    float: none;
+    text-align: center;
+  }
+
+  .nav.navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
 }

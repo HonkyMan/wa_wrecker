@@ -1,0 +1,41 @@
+
+.gallery_main_block{
+    background-color: #f1f1f1;
+}
+.wreck_gallery, .gallery_paragraph{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gallery_category{
+    float: none;
+    text-align: center;
+}
+.gallery_category li{
+    color: black;
+    display: inline-block;
+    border: 2px solid #f1f1f1;
+    height: 50px;
+    width: 150px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.gallery_category a{
+    
+    vertical-align: middle;
+    margin-left: 10px;
+} 
+.cat_active{
+    background-color: #FC593A;
+    color: white;
+}
+.gallery_nav{
+    float: none;
+    text-align: center;
+}
+.gallery_nav li{
+    display: inline;
+}
+.gallary_p{
+    color:#999;
+}

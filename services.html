@@ -7,8 +7,9 @@
     <title>Авто Помощь</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style/jquery.fancybox.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="style/shared.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/shared.css">
+    <link rel="stylesheet" href="style/services.css">
     <link rel="stylesheet" href="">
 </head>
 <body>
@@ -59,84 +60,49 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid slider" id="wreck_caller">
-            <div class="container">
-                <div class="col-md-7"></div>
-                <div class="col-md-4 wrecker_call">
-                    <form action="" method = "GET">
-                        <input type="hidden" id="type_of_car" name = "type_of_car" value = "2">   
-
-                        <h2 class="wrecker_call-h">ВЫЗВАТЬ ЭВАКУАТОР</h2>
-                        <input type="text" class = "wrecker_call-input" placeholder = "Введите имя">
-                        <input type="tel" class = "wrecker_call-input" placeholder = "Введите номер телефона">
-                        <ul class = "wrecker_call-ul_1">
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "helm"><label for="helm"> Блокировка руля</label></li>
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "wheel"><label for="wheel"> Блокировка колес</label></li>
-                        </ul>
-                        <ul class = "wrecker_call-ul_2">
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "switch"><label for="switch"> Быстрый запуск</label></li>
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "akp"><label for="akp"> Разблокировка АКП</label></li>
-
-                        </ul>
-                    </form>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
     </header>
 
-    <div class="container-fluid intro_block">
-        <div class="container why_ask">
-            <div class="col-md-4">
-                <div class="divider"></div>
-                <p class="small_ask">
-                    ПОЧЕМУ <br>ВЫБИРАЮТ<br>ЭВАКУАТОР
-                    <h1 class="big_ask" style = "float: left;">У НАС</h1>
-                    <strong class = "intro_block_ask">?</strong>
-                </p>
-            </div>
-            <div class="col-md-8">
-                <img src="images/choice.png" class = "img-responsive" alt="">
-            </div>
+    <div class="container-fluid bread">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li class="active">Услуги</li>
+            </ol>
         </div>
     </div>
 
-    <div class="container-fluid price_block">
-        <div class="container price">
-            <div class="row">
-                <center><h1>НАШИ ЦЕНЫ</h1>
-                <div class="divider"></div></center> 
+    <div class="container-fluid services_page">
+        <div class="container">
+            <center>
+                <h1>УСЛУГИ ЭВАКУАТОРА В КАЗАНИ</h1>
+                <div class="divider"></div>
+            </center>
+            <div class="container">
+                <div class="col-md-4">
+                    <img src="images/services/car_1.png" alt="" class="img-responsive service_rotate">
+                    <h3>ЭВАКУАЦИЯ МОТОЦИКЛОВ</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/services/car_2.png" alt="" class="img-responsive service_rotate">
+                    <h3>ЭВАКУАЦИЯ ЛЕГКОВЫХ АВТО</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/services/car_3.png" alt="" class="img-responsive service_rotate">
+                    <h3>ЭВАКУАЦИЯ МИНИВЕНОВ</h3>
+                </div>
             </div>
-            <div class="row">
-                <div class="container">
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "1">
-                        <h4 class="price-type_name" align = "center">мотоциклы</h4>
-                        <img src="images/price_car_1.png" alt="" class="img-responsive price-type_image">
-                        <div class="price-cost" id = "moto_price">
-                            <p>от 1 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "2">
-                        <h4 class="price-type_name" align = "center">легковые авто</h4>
-                        <img src="images/price_car_2.png" alt="" class="img-responsive price-type_image">
-                        <div class="price-cost" id = "car_price">
-                            <p>от 1 200 руб.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "3">
-                        <h4 class="price-type_name" align = "center">внедорожники до 4т.</h4>
-                        <img src="images/price_car_3.png" alt="" class="img-responsive price-type_image">
-                        <div class="price-cost" id = "_price">
-                            <p>от 1 500 руб.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "4">
-                        <h4 class="price-type_name" align = "center">спецтехника до 4т.</h4>
-                        <img src="images/price_car_4.png" alt="" class="img-responsive price-type_image">
-                        <div class="price-cost" id = "suv_price">
-                            <p>от 1 800 руб.</p>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="col-md-4">
+                    <img src="images/services/car_4.png" alt="" class="img-responsive service_rotate">
+                    <h3>ПРИКУРИТЬ ВАШЕ АВТО</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/services/car_5.png" alt="" class="img-responsive service_rotate">
+                    <h3>ТРЕЗВЫЙ ВОДИТЕЛЬ</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/services/car_6.png" alt="" class="img-responsive service_rotate">
+                    <h3>ЭВАКУАЦИЯ СПЕЦТЕХНИКИ</h3>
                 </div>
             </div>
         </div>
@@ -244,107 +210,6 @@
                 </center>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid gallery_block">
-        <div class="container">
-            <center>
-                <h1 class="gallery_block-h">ПРИМЕРЫ НАШИХ РАБОТ</h1>
-                <div class="divider"></div>
-            </center>
-            <div class="gallery_block-gallery">
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_1.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_1.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_2.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_2.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_3.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_3.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_4.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_4.png" alt="" class="img-responsive"></a></div>
-
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_1.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_1.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_2.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_2.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_3.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_3.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_4.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_4.png" alt="" class="img-responsive"></a></div>
-            </div>
-            <div class="container">
-                <center><a href="#" class="gallery_block-all_img">Смотреть все фото</a></center>
-            </div>
-        </div>
-    </div>  
-
-    <div class="container-fluid about_work">
-        <div class="container">
-            <center>
-                <h1 class="about_work-h">КАК МЫ РАБОТАЕМ</h1>
-                <div class="divider"></div>
-            </center>
-            <div class="col-md-6 col-sm-12">
-                <img src="images/about_work/bout_work_1.png" class = "img-responsive" alt="">
-                <img src="images/about_work/bout_work_2.png" class = "img-responsive" alt="">
-                <img src="images/about_work/bout_work_3.png" class = "img-responsive" alt="">
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <img src="images/about_work/bout_work_4.png" class = "img-responsive" alt="">
-                <img src="images/about_work/bout_work_5.png" class = "img-responsive" alt="">
-                <img src="images/about_work/bout_work_6.png" class = "img-responsive" alt="">
-            </div>
-        </div>
-    </div> 
-
-    <div class="container-fluid review_block">
-        <div class="container">
-            <center>
-                <h1 class="review_block-h">ОТЗЫВЫ О НАС</h1>
-                <div class="divider"></div>
-            </center>
-            <div class="row">
-                <div class="container">
-                    <div class="col-sm-3"><img src="http://placehold.it/200x200" alt="" class="img-responsive"></div>
-                    <div class="col-sm-9 review_block-desc">                                                     
-                        <img src="http://placehold.it/50x50" alt="" class="portfolio">
-                        <h2 class="review_block-name">Билецкий Антон <br><span class="review_block-date">05.02.2017</span></h2>
-                        <p class = "review_block-p">
-                            Случалось со мной неприятность - старушка боевая сломалась. Ну никак не хочет ехать. В машине валялся
-                            телефон фирмы, типа только позвони - и мы у ваших ног, спасаем-доставим. Радостно соединилась милая
-                            девушка, выслушала мое жалобное нытье и заверила в оказании немедленной помощи. И скидка была обещена...
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="container">
-                    <div class="col-sm-3"><img src="http://placehold.it/200x200" alt="" class="img-responsive"></div>
-                    <div class="col-sm-9 review_block-desc">
-                        <img src="http://placehold.it/50x50" alt="" class="portfolio">
-                        <div>
-                            <h2 class="review_block-name">Билецкий Антон <br><span class="review_block-date">05.02.2017</span></h2>
-                        </div>
-                        <p class = "review_block-p">
-                            Случалось со мной неприятность - старушка боевая сломалась. Ну никак не хочет ехать. В машине валялся
-                            телефон фирмы, типа только позвони - и мы у ваших ног, спасаем-доставим. Радостно соединилась милая
-                            девушка, выслушала мое жалобное нытье и заверила в оказании немедленной помощи. И скидка была обещена...
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container type_of_services">
-        <h1>ВЫЗВАТЬ ЭВАКУАТОР В КАЗАНИ</h1>
-        <h2 class = "type_of_services-h2">Виды услуг эвакуатора</h2>
-        <p class = "type_of_services-p">
-            Основные принципы нашей работы - это оперативность выполнения заказа и максимальный комфорт клиента. Мы гарантируем доступные цены
-            на все виды работ и сохранность вашего транспортного средства во время его транспортировки нашими сотрудниками.
-            Вы можете вызвать эвакуатор любого класса в нужное Вам время дешево, так как наш сервис принимает заявки от клиентов в 
-            круглосуточном режиме. Грузовой эвакуатор оснащен дополнительным техническим оборудованием, позволяющим разместить на его площадке 
-            любое средство передвижение с общей массой не более 4 т.
-        </p>
-        <p class = "type_of_services-p">
-            Вызвать эвакуатор круглосуточно вы можжете, узнав телефонны нашей службы и позвонив по ним. В течении небольшого промежутка
-            времени наша бригада прибудет на место стоянки вашей машины. Мы оперативно решаем задачи по перевозке различной специальзированной
-            техники (погрузчик, минитрактор и тому подобное) по нужному вам адресу по выгодной цене. Стоимость эвакуатора вы можете уточнить
-            у менеджера компании, номинальная цена составляет 1000 рублей. <br>
-            Постоянным клиентам скидка.
-        </p>
     </div>
 
     <div class="container-fluid contact_block">

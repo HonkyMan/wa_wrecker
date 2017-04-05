@@ -1,0 +1,11 @@
+.services_page{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.service_rotate:hover{
+    -moz-transform: rotate(15deg); /* Для Firefox */
+    -ms-transform: rotate(15deg); /* Для IE */
+    -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(15deg); /* Для Opera */
+    transform: rotate(15deg);
+}
