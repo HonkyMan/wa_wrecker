@@ -44,6 +44,14 @@ input{
     border-radius: 5px;
     font-size: 15px;
     height: 45px;
+}
+.submit:hover{
+    background-color: #b53b23;
+}
+.s_1{
+    width: 100%;
+}
+.s_2{
     width: 200px;
 }
 
@@ -248,7 +256,7 @@ header{
     margin-top: -10px;
 }
 .contact_area-name, .contact_area-phone{
-    width: 49%;
+    width: 40%;
     height: 40px;
     padding-left: 15px;
     font-size: 18px;
@@ -257,7 +265,7 @@ header{
     margin-bottom: 5px;
 }
 .contact_area-submit{
-    width: 99%;
+    width: 80%;
     height: 40px;
     border:none;
     border-radius: 3px;
@@ -449,6 +457,10 @@ footer{
 
 .footer_2{
     background-color: #0A3567;
+}
+.web_logo{
+    float: right;
+    margin-top: -40px;
 }
 
 @media screen and (max-width: 767px){

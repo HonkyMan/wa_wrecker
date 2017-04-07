@@ -1,4 +1,9 @@
 $(document).ready(function() { 
+    var year = new Date();
+    year = year.getFullYear();
+    var obj = document.getElementById("this-year");
+    obj.innerHTML = year;
+    
     $("a.fancyimage").fancybox(); 
     $(".full_map").click(function(){
         window.open('https://goo.gl/US1GeD');

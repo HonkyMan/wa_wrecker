@@ -63,21 +63,21 @@
             <div class="container">
                 <div class="col-md-7"></div>
                 <div class="col-md-4 wrecker_call">
-                    <form action="" method = "GET">
+                    <form action="query.php" method = "GET">
                         <input type="hidden" id="type_of_car" name = "type_of_car" value = "2">   
 
                         <h2 class="wrecker_call-h">ВЫЗВАТЬ ЭВАКУАТОР</h2>
-                        <input type="text" class = "wrecker_call-input" placeholder = "Введите имя">
-                        <input type="tel" class = "wrecker_call-input" placeholder = "Введите номер телефона">
+                        <input type="text" class = "wrecker_call-input" name="name" placeholder = "Введите имя" required>
+                        <input type="tel" class = "wrecker_call-input" name="tel" placeholder = "Введите номер телефона" required>
                         <ul class = "wrecker_call-ul_1">
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "helm"><label for="helm"> Блокировка руля</label></li>
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "wheel"><label for="wheel"> Блокировка колес</label></li>
+                            <li><input name="helmBlock" type="checkbox" class = "wrecker_call-checkbox" id = "helm"><label for="helm"> Блокировка руля</label></li>
+                            <li><input name="wheelBlock" type="checkbox" class = "wrecker_call-checkbox" id = "wheel"><label for="wheel"> Блокировка колес</label></li>
                         </ul>
                         <ul class = "wrecker_call-ul_2">
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "switch"><label for="switch"> Быстрый запуск</label></li>
-                            <li><input type="checkbox" class = "wrecker_call-checkbox" id = "akp"><label for="akp"> Разблокировка АКП</label></li>
-
+                            <li><input name="fastStart" type="checkbox" class = "wrecker_call-checkbox" id = "switch"><label for="switch"> Быстрый запуск</label></li>
+                            <li><input name="unlockAKP" type="checkbox" class = "wrecker_call-checkbox" id = "akp"><label for="akp"> Разблокировка АКП</label></li>
                         </ul>
+                        <input type="submit" class="submit s_1" value = "ВЫЗВАТЬ ЭВАКУАТОР">
                     </form>
                 </div>
                 <div class="col-md-1"></div>
@@ -91,12 +91,12 @@
                 <div class="divider"></div>
                 <p class="small_ask">
                     ПОЧЕМУ <br>ВЫБИРАЮТ<br>ЭВАКУАТОР
-                    <h1 class="big_ask" style = "float: left;">У НАС</h1>
+                    <p class="h1 big_ask" style = "float: left;">У НАС</p>
                     <strong class = "intro_block_ask">?</strong>
                 </p>
             </div>
             <div class="col-md-8">
-                <img src="images/choice.png" class = "img-responsive" alt="">
+                <img src="images/choice.png" class = "img-responsive" alt="" id ="why_1"><label for="why_1">some text</label>
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
     <div class="container-fluid price_block">
         <div class="container price">
             <div class="row">
-                <center><h1>НАШИ ЦЕНЫ</h1>
+                <center><p class = "h1">НАШИ ЦЕНЫ</p>
                 <div class="divider"></div></center> 
             </div>
             <div class="row">
@@ -146,7 +146,7 @@
         <div class="container">
             <div class="col-md-6">
                 <p class= "contact_area-p">ВЫЗОВИ ЭВАКУАТОР <br>ПРЯМО СЕЙЧАС И ПОЛУЧИ</p>
-                <p class= "contact_area-h">СКИДКУ 10%</p>
+                <p class= "h1 contact_area-h">СКИДКУ 10%</p>
             </div>
             <div class="col-md-6">
                 <form action="">
@@ -165,11 +165,11 @@
     <div class="container-fluid calc_block">
         <div class="container">
             <center>
-                <h1 class="calc_block-h">КАЛЬКУЛЯТОР РАСЧЕТА ЭВАКУАЦИИ ВАШЕГО АВТО</h1>
+                <p class="h1 calc_block-h">КАЛЬКУЛЯТОР РАСЧЕТА ЭВАКУАЦИИ ВАШЕГО АВТО</p>
                 <div class="divider"></div>
             </center><br>
             <div class="container calculator">
-                <div class="calculator-header row"><center><h1>Тип автомобиля</h1></center></div>
+                <div class="calculator-header row"><center><p class = "h1">Тип автомобиля</p></center></div>
                 <div class = "calculator-form">
                     <input type="hidden" class = "car_type" name = "car_type" value = "0">
                     <input type="hidden" id="h_blocked" name = "h_blocked" value="0">
@@ -239,7 +239,7 @@
                     <input type="hidden" id="car_num" value = "1"><input type="hidden" id="from" value = "0">
                     <input type="text" class = "contact_area-name" name="name" id="name" placeholder="Введите имя"/>
                     <input type="tel" class = "contact_area-phone" name="phone"  id="phone" placeholder="Введите номер телефона"/><br>
-                    <input type="submit" class = "submit contact_area-submit" value = "ЗАКАЗАТЬ ЗВОНОК">
+                    <input type="submit" class = "submit contact_area-submit" value = "ЗАКАЗАТЬ">
                 </form>
                 </center>
             </div>
@@ -249,7 +249,7 @@
     <div class="container-fluid gallery_block">
         <div class="container">
             <center>
-                <h1 class="gallery_block-h">ПРИМЕРЫ НАШИХ РАБОТ</h1>
+                <p class="h1 gallery_block-h">ПРИМЕРЫ НАШИХ РАБОТ</p>
                 <div class="divider"></div>
             </center>
             <div class="gallery_block-gallery">
@@ -272,7 +272,7 @@
     <div class="container-fluid about_work">
         <div class="container">
             <center>
-                <h1 class="about_work-h">КАК МЫ РАБОТАЕМ</h1>
+                <p class="h1 about_work-h">КАК МЫ РАБОТАЕМ</p>
                 <div class="divider"></div>
             </center>
             <div class="col-md-6 col-sm-12">
@@ -291,12 +291,13 @@
     <div class="container-fluid review_block">
         <div class="container">
             <center>
-                <h1 class="review_block-h">ОТЗЫВЫ О НАС</h1>
+                <p class="h1 review_block-h">ОТЗЫВЫ О НАС</p>
                 <div class="divider"></div>
             </center>
             <div class="row">
                 <div class="container">
-                    <div class="col-sm-3"><img src="http://placehold.it/200x200" alt="" class="img-responsive"></div>
+                    <div class="col-sm-3">
+                        <iframe width="250" height="200" src="https://www.youtube.com/embed/OROc3SEOIZA" frameborder="0" allowfullscreen></iframe></div>
                     <div class="col-sm-9 review_block-desc">                                                     
                         <img src="http://placehold.it/50x50" alt="" class="portfolio">
                         <h2 class="review_block-name">Билецкий Антон <br><span class="review_block-date">05.02.2017</span></h2>
@@ -311,7 +312,7 @@
             <br>
             <div class="row">
                 <div class="container">
-                    <div class="col-sm-3"><img src="http://placehold.it/200x200" alt="" class="img-responsive"></div>
+                    <div class="col-sm-3"><iframe width="250" height="200" src="https://www.youtube.com/embed/Fx_yu9ocvuM" frameborder="0" allowfullscreen></iframe></div>
                     <div class="col-sm-9 review_block-desc">
                         <img src="http://placehold.it/50x50" alt="" class="portfolio">
                         <div>
@@ -329,7 +330,7 @@
     </div>
 
     <div class="container type_of_services">
-        <h1>ВЫЗВАТЬ ЭВАКУАТОР В КАЗАНИ</h1>
+        <p class="h1">ВЫЗВАТЬ ЭВАКУАТОР В КАЗАНИ</p>
         <h2 class = "type_of_services-h2">Виды услуг эвакуатора</h2>
         <p class = "type_of_services-p">
             Основные принципы нашей работы - это оперативность выполнения заказа и максимальный комфорт клиента. Мы гарантируем доступные цены
@@ -349,19 +350,20 @@
 
     <div class="container-fluid contact_block">
         <div class="container">
+            <div class="col-md-1"></div>
             <div class="col-md-4">
                 <center>
                     <h2 class = "contact_block-h">ОСТАЛИСЬ ВОПРОСЫ?</h2>
                     <h4 class = "contact_block-h">задайте их менеджеру</h4s>
                 </center>
-                <form action="GET">
-                    <input type="text" placeholder = "Ваше имя">
-                    <input type="tel" placeholder = "Введите номер телефона">
+                <form action="query.php" method="GET">
+                    <input name="name" type="text" placeholder = "Ваше имя">
+                    <input name="tel" type="tel" placeholder = "Введите номер телефона">
                     <textarea name="message" id="" rows="5" resize = "none" placeholder="Текст сообщения"></textarea>
-                    <input type="submit" class = "submit" value = "ЗАДАТЬ ВОПРОС">
+                    <input type="submit" class = "submit s_2" value = "ЗАДАТЬ ВОПРОС">
                 </form>
             </div>
-            <div class="col-md-8"><div class="full_map"></div></div>
+            <div class="col-md-7"><div class="full_map"></div></div>
         </div>
     </div>
 
@@ -411,10 +413,10 @@
         <div class="container-fluid footer_2">
             <div class="container">
                 <div class="col-mdd-6">
-                    <span>© 2013-2015 "Авто-Помощь". Все права защищены</span>
+                    <span>© 2013-<span id="this-year"></span> "Авто-Помощь". Все права защищены</span>
                 </div>
                 <div class="col-mdd-6">
-                    <img src="" alt="">
+                    <a href="http://web-avenue.ru/"><img src="images/web_logo.png" alt="1k6j01" class="img-responsive web_logo"></a>
                 </div>
             </div>
         </div>

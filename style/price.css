@@ -7,3 +7,18 @@ thead{
     color: white;
     text-align: center;
 }
+table tr{
+    height: 50px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #333;
+}
+thead tr th{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+tbody tr:hover{
+    background: #FC593A;
+    color: white;
+}
