@@ -21,4 +21,10 @@ $(document).ready(function() {
         $('#type_of_car').val($(this).attr('data-target'));
         window.scrollBy(0, -1500);
     });
+    $(function(){
+          $("#phone-1").mask("+7(999) 999-99-99");
+          $("#phone-2").mask("+7(999) 999-99-99");
+          $("#phone-3").mask("+7(999) 999-99-99");
+          $("#phone").mask("+7(999) 999-99-99");
+    });
 }); 

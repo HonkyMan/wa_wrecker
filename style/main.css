@@ -63,7 +63,7 @@ header{
     background-image: url('../images/slide.png');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover;
+	background-size: contain;
     background-color: white;
 }
 .header-logo_time, .header-tel_block, .header-time_desc, .share{
@@ -127,8 +127,9 @@ header{
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(249, 89, 58, 1);
     background-color: rgba(18, 60, 112, 1);
+    text-decoration: underline;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
     border-color: #123c70;
@@ -207,6 +208,32 @@ header{
 .intro_block_ask{
     font-size: 100px;
 }
+/*
+.intro_block-img_block{
+    display:inline-block;   
+    position:relative;
+}
+.lb{
+    display:inline-block;
+    position:absolute;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.lb:nth-child(odd){
+    top: 250px;
+    left: 70px;
+}
+.lb:nth-child(even){
+    top: 140px;
+    left: 180px;
+}
+.label_2{
+    left: 170px;
+}
+.label_3{
+    left: 200px;
+}*/
 
 /**/
 .price-cost{
@@ -365,6 +392,9 @@ header{
     margin-top: 50px;
     top: 50px;
     border-bottom: 1px dashed #0A407E;
+}
+.gal_img:hover{
+    box-shadow: 0 0 20px rgba(249, 89, 58, .9)
 }
 /**/
 

@@ -7,9 +7,9 @@
     <title>Авто Помощь</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style/jquery.fancybox.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/animate.min.css">
     <link rel="stylesheet" href="style/shared.css">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="">
 </head>
 <body>
     <header>
@@ -63,12 +63,12 @@
             <div class="container">
                 <div class="col-md-7"></div>
                 <div class="col-md-4 wrecker_call">
-                    <form action="query.php" method = "GET">
+                    <form class="wow fadeInLeft" action="query.php" method = "GET">
                         <input type="hidden" id="type_of_car" name = "type_of_car" value = "2">   
 
                         <h2 class="wrecker_call-h">ВЫЗВАТЬ ЭВАКУАТОР</h2>
                         <input type="text" class = "wrecker_call-input" name="name" placeholder = "Введите имя" required>
-                        <input type="tel" class = "wrecker_call-input" name="tel" placeholder = "Введите номер телефона" required>
+                        <input id="phone-1" type="tel" class = "wrecker_call-input" name="tel" placeholder = "Введите номер телефона" required>
                         <ul class = "wrecker_call-ul_1">
                             <li><input name="helmBlock" type="checkbox" class = "wrecker_call-checkbox" id = "helm"><label for="helm"> Блокировка руля</label></li>
                             <li><input name="wheelBlock" type="checkbox" class = "wrecker_call-checkbox" id = "wheel"><label for="wheel"> Блокировка колес</label></li>
@@ -95,8 +95,11 @@
                     <strong class = "intro_block_ask">?</strong>
                 </p>
             </div>
-            <div class="col-md-8">
-                <img src="images/choice.png" class = "img-responsive" alt="" id ="why_1"><label for="why_1">some text</label>
+            <div class="col-md-8 intro_block-img_block">
+                <img src="images/choice.png" class = "img-responsive" alt="Качественные материалы Современная техника 5 своих эвакуаторов доступные цены более 7 лет на рынке наличный безналичный расчет" id ="why_1">
+                <!--<span class="lb label_1">Качественные <br>материалы</span>               <span class="lb label_4">Доступные <br>цены</span>
+                <span class="lb label_2">Современная <br>техника <br>(иномарки)</span>   <span class="lb label_5">Более 7 лет <br>на рынке</span>
+                <span class="lb label_3">5 своих <br>эвакуаторов</span>                  <span class="lb label_6">Наличный <br>безналичный <br>расчет</span>-->
             </div>
         </div>
     </div>
@@ -109,28 +112,28 @@
             </div>
             <div class="row">
                 <div class="container">
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "1">
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0s" id="order_wreck" data-target = "1" data-wow-offset="150">
                         <h4 class="price-type_name" align = "center">мотоциклы</h4>
                         <img src="images/price_car_1.png" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "moto_price">
                             <p>от 1 000 руб.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "2">
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.5s" id="order_wreck" data-target = "2" data-wow-offset="150">
                         <h4 class="price-type_name" align = "center">легковые авто</h4>
                         <img src="images/price_car_2.png" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "car_price">
                             <p>от 1 200 руб.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "3">
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="1.5s" id="order_wreck" data-target = "3" data-wow-offset="150">
                         <h4 class="price-type_name" align = "center">внедорожники до 4т.</h4>
                         <img src="images/price_car_3.png" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "_price">
                             <p>от 1 500 руб.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6" id="order_wreck" data-target = "4">
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="2s" id="order_wreck" data-target = "4" data-wow-offset="150">
                         <h4 class="price-type_name" align = "center">спецтехника до 4т.</h4>
                         <img src="images/price_car_4.png" alt="" class="img-responsive price-type_image">
                         <div class="price-cost" id = "suv_price">
@@ -148,11 +151,11 @@
                 <p class= "contact_area-p">ВЫЗОВИ ЭВАКУАТОР <br>ПРЯМО СЕЙЧАС И ПОЛУЧИ</p>
                 <p class= "h1 contact_area-h">СКИДКУ 10%</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow zoomIn">
                 <form action="">
                     <div class="row">
                             <input type="text" class = "contact_area-name" placeholder = "Введите имя">
-                            <input type="tel" class = "contact_area-phone" placeholder = "Введите номер телефона">
+                            <input id="phone-2" type="tel" class = "contact_area-phone" placeholder = "Номер телефона">
                     </div>
                     <div class="row">
                             <input type="submit" class = "contact_area-submit" value = "ВЫЗВАТЬ ЭВАКУАТОР">
@@ -168,7 +171,7 @@
                 <p class="h1 calc_block-h">КАЛЬКУЛЯТОР РАСЧЕТА ЭВАКУАЦИИ ВАШЕГО АВТО</p>
                 <div class="divider"></div>
             </center><br>
-            <div class="container calculator">
+            <div class="container calculator wow pulse" data-wow-offset="200">
                 <div class="calculator-header row"><center><p class = "h1">Тип автомобиля</p></center></div>
                 <div class = "calculator-form">
                     <input type="hidden" class = "car_type" name = "car_type" value = "0">
@@ -238,7 +241,7 @@
                 <form class="calc_connect-form" action="">
                     <input type="hidden" id="car_num" value = "1"><input type="hidden" id="from" value = "0">
                     <input type="text" class = "contact_area-name" name="name" id="name" placeholder="Введите имя"/>
-                    <input type="tel" class = "contact_area-phone" name="phone"  id="phone" placeholder="Введите номер телефона"/><br>
+                    <input type="tel" class = "contact_area-phone" name="phone"  id="phone-3" placeholder="Введите номер телефона"/><br>
                     <input type="submit" class = "submit contact_area-submit" value = "ЗАКАЗАТЬ">
                 </form>
                 </center>
@@ -253,15 +256,15 @@
                 <div class="divider"></div>
             </center>
             <div class="gallery_block-gallery">
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_1.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_1.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_2.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_2.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_3.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_3.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_4.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_4.png" alt="" class="img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_1.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_1.png" alt="" class="gal_img img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_2.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_2.png" alt="" class="gal_img img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_3.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_3.png" alt="" class="gal_img img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_4.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_4.png" alt="" class="gal_img img-responsive"></a></div>
 
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_1.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_1.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_2.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_2.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_3.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_3.png" alt="" class="img-responsive"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_4.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_4.png" alt="" class="img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_1.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_1.png" alt="" class="gal_img img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_2.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_2.png" alt="" class="gal_img img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_3.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_3.png" alt="" class="gal_img img-responsive"></a></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><a href="images/gallery/photo_4.png" class="fancyimage" data-fancybox-group="group"><img src="images/gallery/photo_4.png" alt="" class="gal_img img-responsive"></a></div>
             </div>
             <div class="container">
                 <center><a href="#" class="gallery_block-all_img">Смотреть все фото</a></center>
@@ -294,7 +297,7 @@
                 <p class="h1 review_block-h">ОТЗЫВЫ О НАС</p>
                 <div class="divider"></div>
             </center>
-            <div class="row">
+            <div class="row wow fadeInLeft">
                 <div class="container">
                     <div class="col-sm-3">
                         <iframe width="250" height="200" src="https://www.youtube.com/embed/OROc3SEOIZA" frameborder="0" allowfullscreen></iframe></div>
@@ -310,7 +313,7 @@
                 </div>
             </div>
             <br>
-            <div class="row">
+            <div class="row wow fadeInRight">
                 <div class="container">
                     <div class="col-sm-3"><iframe width="250" height="200" src="https://www.youtube.com/embed/Fx_yu9ocvuM" frameborder="0" allowfullscreen></iframe></div>
                     <div class="col-sm-9 review_block-desc">
@@ -356,9 +359,9 @@
                     <h2 class = "contact_block-h">ОСТАЛИСЬ ВОПРОСЫ?</h2>
                     <h4 class = "contact_block-h">задайте их менеджеру</h4s>
                 </center>
-                <form action="query.php" method="GET">
+                <form class="wow fadeInLeft" action="query.php" method="GET">
                     <input name="name" type="text" placeholder = "Ваше имя">
-                    <input name="tel" type="tel" placeholder = "Введите номер телефона">
+                    <input name="tel" type="tel" placeholder = "Введите номер телефона" id="phone">
                     <textarea name="message" id="" rows="5" resize = "none" placeholder="Текст сообщения"></textarea>
                     <input type="submit" class = "submit s_2" value = "ЗАДАТЬ ВОПРОС">
                 </form>
@@ -426,7 +429,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script/jquery.fancybox.min.js"></script>
     <script src="https://use.fontawesome.com/5c50798a96.js"></script>
+    <script src="script/jquery.mask.min.js"></script>
     <script src="script/script.js"></script>
     <script src="script/calc.js"></script>
+    <script src = "script/wow.min.js"></script>
+    <script>
+	    new WOW().init();
+    </script>
 </body>
 </html>
